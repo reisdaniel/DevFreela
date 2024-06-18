@@ -26,7 +26,7 @@ namespace DevFreela.API.Controllers
                 return BadRequest();
             }
 
-            return CreatedAtAction(nameof(GetById), new { id =  createProject.Id }, createProject);
+            return CreatedAtAction(nameof(GetById), new { id = createProject.Id }, createProject);
         }
 
         [HttpPut("{id}")]
@@ -42,6 +42,24 @@ namespace DevFreela.API.Controllers
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
+        {
+            return NoContent();
+        }
+
+        [HttpPost("{id}/comments")]
+        public IActionResult PostComment(int id, [FromBody] CreateCommentModel createComment)
+        {
+            return NoContent();
+        }
+
+        [HttpPut("{id}/start")]
+        public IActionResult Start(int id)
+        {
+            return NoContent();
+        }
+
+        [HttpPut("{id}/finish")]
+        public IActionResult Finish(int id)
         {
             return NoContent();
         }
