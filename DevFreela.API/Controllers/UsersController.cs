@@ -20,7 +20,7 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpPut("{id}/login")]
-        public IActionResult Login(in id, [FromBody] LoginModel login)
+        public IActionResult Login(int id, [FromBody] LoginModel login)
         {
             return NoContent();
         }
