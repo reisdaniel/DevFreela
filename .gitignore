@@ -1,4 +1,18 @@
+# Ignorar arquivos de configuração do Visual Studio
+.sln
+.vs/
+*.csproj.user
+
+# Ignorar configurações locais
+launchSettings.json
+appsettings.json
+appsettings.Development.json
+
+# Ignorar pastas de saída e build
 bin/
 obj/
-.vs/
-appsettings.json
+
+# Ignorar dependências instaladas via NuGet
+packages/
+
+
