@@ -6,5 +6,18 @@ namespace DevFreela.API.Controllers
     [ApiController]
     public class ProjectsController : ControllerBase
     {
+        [HttpGet]
+        public IActionResult Get(string search)
+        {
+            return Ok();
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+
+            return Ok(); 
+        }
+
     }
 }
